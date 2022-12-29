@@ -1,0 +1,107 @@
+{
+  "lang": "en",
+  "screen": {
+    "w": 1920,
+    "h": 1080
+  },
+  "volume": 0.1,
+  "count_down": {
+    "x": 94,
+    "y": 285,
+    "w": 165,
+    "h": 165
+  },
+  "title_screen": {
+    "timing": {
+      "start_break": 1,
+      "end_break": 2
+    },
+    "banner": {
+      "x": 0,
+      "y": 237,
+      "w": 1920,
+      "h": 606,
+      "px": 50,
+      "py": 50
+    }
+  },
+  "quiz_screen": {
+    "timing": {
+      "start_break": 3,
+      "guess_break": 10,
+      "end_break": 2
+    },
+    "banner": {
+      "x": 0,
+      "y": 55,
+      "w": 1920,
+      "h": 180,
+      "px": 50,
+      "py": 5
+    },
+    "image": {
+      "y": 283,
+      "h": 338
+    },
+    "size_2_answers": {
+      "w": 805,
+      "h": 345,
+      "px": 10,
+      "py": 25
+    },
+    "2_answers": [
+      {
+        "x": 94,
+        "y": 659
+      },
+      {
+        "x": 1020,
+        "y": 659
+      }
+    ],
+    "size_3_answers": {
+      "w": 750,
+      "h": 144,
+      "px": 5,
+      "py": 15
+    },
+    "3_answers": [
+      {
+        "x": null,
+        "y": null
+      },
+      {
+        "x": null,
+        "y": null
+      },
+      {
+        "x": null,
+        "y": null
+      }
+    ],
+    "size_4_answers": {
+      "w": 750,
+      "h": 144,
+      "px": 5,
+      "py": 15
+    },
+    "4_answers": [
+      {
+        "x": 98,
+        "y": 659
+      },
+      {
+        "x": 1072,
+        "y": 659
+      },
+      {
+        "x": 98,
+        "y": 860
+      },
+      {
+        "x": 1072,
+        "y": 860
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "String",
+  "publisher": "String",
+  "tags": ["String"],
+  "questions": [
+    {
+      "id": "String",
+      "quest": "String",
+      "picture_url": "String",
+      "type": "String",
+      "answers": [
+        {
+          "id": "String",
+          "ans": "String",
+          "check": "Boolean",
+          "picture_url": "String"
+        }
+      ]
+    }
+  ]
+}
