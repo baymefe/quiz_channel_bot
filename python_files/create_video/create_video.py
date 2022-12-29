@@ -92,9 +92,9 @@ def create_video(clear, json_name):
         # if music is shorter -> loop needed
         else:
             n = math.ceil(final_video.duration) % math.ceil(music.duration-1)
-            gap = final_video.duration - n * (math.ceil(music.duration) - 1)
-            gap_music = music.set_duration(gap)
-            music_loop = concatenate_audioclips(n * [music] + [gap_music])
+            # gap = final_video.duration - n * (math.ceil(music.duration) - 1)
+            # gap_music = music.set_duration(gap)
+            music_loop = concatenate_audioclips((n+1) * [music])  # + [gap_music])
             music_loop = music_loop.volumex(configuration['volume'])
             music_loop.duration = final_video.duration
             final_video.audio = CompositeAudioClip([final_video.audio, music_loop])
