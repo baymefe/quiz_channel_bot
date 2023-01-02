@@ -10,7 +10,7 @@ def create_countdown(configuration, start_time, text, font_color, additional_tim
     number_clip = (
         TextClip(
             txt=str(text),
-            color=font_color,
+            color='white',  # font_color,
             font='Arial-Bold',
             align='center',
             size=(countdown_box['w'], countdown_box['h']),

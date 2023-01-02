@@ -86,7 +86,7 @@ def create_video(clear, json_name):
     else:
         # if music is longer than the video
         if music.duration > final_video.duration:
-            music.duration = final_video.duration
+            music.set_duration(final_video.duration)
             music = music.volumex(configuration['volume'])
             final_video.audio = CompositeAudioClip([final_video.audio, music])
         # if music is shorter -> loop needed

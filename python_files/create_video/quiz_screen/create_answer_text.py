@@ -45,7 +45,7 @@ def create_answer_text(configuration, answer_data, json_name, font_color, q_audi
         correct_answer_clip = (
             ColorClip(
                 size=(a_box_config['w'], a_box_config['h']),
-                color=[12, 170, 21]
+                color=[20, 255, 0]
             )
             .set_position((a_box_config['x'], a_box_config['y']))
             .set_start(q_audio_end_time + guess_break)

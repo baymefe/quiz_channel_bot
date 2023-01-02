@@ -45,6 +45,7 @@ def create_quiz_screen(configuration, question_data, json_name, template):
         ans_type = '3_answers'
 
     for i, answer in enumerate(question_data['answers']):
+
         # checking is the answer is text or image
         if answer['ans']:
             answer_text = create_answer_text(

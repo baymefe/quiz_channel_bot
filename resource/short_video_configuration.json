@@ -12,7 +12,7 @@
   "quiz_screen": {
     "timing": {
       "start_break": 1,
-      "guess_break": 3,
+      "guess_break": 5,
       "end_break": 2
     },
     "banner": {

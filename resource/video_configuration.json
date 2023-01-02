@@ -4,7 +4,7 @@
     "w": 1920,
     "h": 1080
   },
-  "volume": 0.1,
+  "volume": 0.12,
   "count_down": {
     "x": 94,
     "y": 285,
@@ -27,21 +27,21 @@
   },
   "quiz_screen": {
     "timing": {
-      "start_break": 3,
-      "guess_break": 10,
+      "start_break": 2,
+      "guess_break": 5,
       "end_break": 2
     },
     "banner": {
       "x": 0,
-      "y": 55,
+      "y": 49,
       "w": 1920,
       "h": 180,
       "px": 50,
       "py": 5
     },
     "image": {
-      "y": 283,
-      "h": 338
+      "y": 273,
+      "h": 343
     },
     "size_2_answers": {
       "w": 805,
