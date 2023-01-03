@@ -91,7 +91,7 @@ def create_quiz_screen(configuration, question_data, json_name, template):
     else:
         picture_clip = create_picture(
             configuration=configuration,
-            image_path=f'./images/{json_name}/{q_id}.jpg',
+            image_path=f'./images/{json_name}/{q_id}.png',
             duration=duration
         )
 
