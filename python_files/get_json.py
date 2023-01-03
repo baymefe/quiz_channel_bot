@@ -27,7 +27,7 @@ def fetch_data(url):
         title = page.query_selector('xpath=//*[@id="root"]/div/div/div/main/div[2]/div[2]/div[1]/div[3]/div[1]').text_content()
 
         # save the publisher
-        publisher = page.query_selector('xpath=//*[@id="root"]/div/div/div/main/div[2]/div[2]/div[1]/div[3]/div[5]/div[2]/div/span').text_content()
+        publisher = page.query_selector('xpath=/html/body/div[1]/div/div/div/main/div[2]/div[2]/div[1]/div[3]/div[5]/div[2]/div/a').text_content()
 
         # get rid of the icon
         if publisher[0:4] == 'Icon':
