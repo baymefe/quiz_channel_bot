@@ -85,19 +85,25 @@ def create_video(clear, json_name):
         pass
     else:
         # if music is longer than the video
-        if music.duration > final_video.duration:
-            music.set_duration(final_video.duration)
+        if music.duration > (final_video.duration + 5):
+            print(f'music dur {music.duration}')
+            print(f'video dur {final_video.duration}')
+            final_audio = music.set_duration(final_video.duration + 5)
             music = music.volumex(configuration['volume'])
-            final_video.audio = CompositeAudioClip([final_video.audio, music])
+            final_video.audio = CompositeAudioClip([final_video.audio, final_audio])
         # if music is shorter -> loop needed
         else:
             n = math.ceil(final_video.duration) % math.ceil(music.duration-1)
             # gap = final_video.duration - n * (math.ceil(music.duration) - 1)
             # gap_music = music.set_duration(gap)
+            print(f'music dur {music.duration}')
+            print(f'video dur {final_video.duration}')
             music_loop = concatenate_audioclips((n+1) * [music])  # + [gap_music])
             music_loop = music_loop.volumex(configuration['volume'])
-            music_loop.duration = final_video.duration
-            final_video.audio = CompositeAudioClip([final_video.audio, music_loop])
+            final_audio = music_loop.set_duration(final_video.duration + 5)
+            print(f'music dur {final_audio.duration}')
+            print(f'video dur {final_video.duration}')
+            final_video.audio = CompositeAudioClip([final_video.audio, final_audio])
 
     # writing the video file
     final_video.write_videofile(f'./created_videos/{video_name}.mp4', fps=3)
