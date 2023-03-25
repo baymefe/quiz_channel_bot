@@ -86,7 +86,7 @@ def create_quiz_screen(configuration, question_data, json_name, template):
     video_elements.insert(0, quiz_background_clip)
 
     # create picture if it exists
-    if question_data['picture_url'] is None:
+    if question_data['picture_url'] is None or question_data['picture_url'] == "":
         pass
     else:
         picture_clip = create_picture(
